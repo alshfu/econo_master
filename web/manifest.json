@@ -1,0 +1,35 @@
+{
+    "name": "econo_master",
+    "short_name": "econo_master",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#0175C2",
+    "theme_color": "#0175C2",
+    "description": ""EconoMaster is a comprehensive business calculator designed to streamline and simplify the financial calculations and projections for businesses. With a user-friendly interface and a wide range of functionalities, EconoMaster can handle everything from simple calculations to complex financial forecasts. Whether you're calculating profit margins, forecasting revenue growth, or analyzing investment opportunities, EconoMaster is the tool to help you make informed business decisions. Built with Flutter, EconoMaster is a cross-platform application that runs smoothly on both iOS and Android devices."",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
