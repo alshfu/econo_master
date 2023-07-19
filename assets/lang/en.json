@@ -1,0 +1,22 @@
+
+{
+  "/*": "English lang translation/",
+  "enter_price_excluding_vat": "Enter price excluding VAT",
+  "vat_amount": "VAT amount",
+  "enter_price_including_vat": "Enter price including VAT",
+  "sum_prices_without_vat": "Sum of prices without VAT",
+  "vat_sum": "VAT Sum",
+  "sum_prices_with_vat": "Sum of prices with VAT",
+  "add": "Add",
+  "vat_rate": "VAT Rate",
+  "ex_vat": "Ex VAT",
+  "vat": "VAT",
+  "inc_vat": "Inc VAT",
+  "enter_custom_vat": "Enter custom VAT value",
+  "price_excluding_vat_sum": "Total of prices without VAT",
+  "vat_amount_sum": "Total of VAT amounts",
+  "price_including_vat_sum": "Total of prices with VAT",
+  "enter_price_including_vat_sum": "Enter total of prices with VAT",
+  "chose_your_vat_rate": "Choose your VAT rate",
+  "enter_custom_VAT_rate_value": "Enter custom VAT rate value"
+}

@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:econo_master/rut_calculator.dart';
-import 'package:econo_master/vat_calculator.dart';
+import 'package:econo_master/vat_calculator/vat_calculator.dart';
 import 'package:econo_master/about.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:econo_master/localization.dart';
+
 
 class EconoMaster extends StatelessWidget {
   const EconoMaster({Key? key}) : super(key: key);
@@ -9,6 +12,15 @@ class EconoMaster extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      localizationsDelegates: [
+        AppLocalizations.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ],
+      supportedLocales: [
+        const Locale('en', ''),
+        const Locale('ru', ''),
+      ],
       home: DefaultTabController(
         length: 3,
         child: Scaffold(
@@ -56,6 +68,7 @@ class EconoMaster extends StatelessWidget {
     );
   }
 }
+
 
 void main() {
   runApp(const EconoMaster());

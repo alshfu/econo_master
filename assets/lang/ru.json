@@ -1,0 +1,21 @@
+{
+  "/*": "Перевод на русский язык",
+  "enter_price_excluding_vat": "Введите цену без учета НДС",
+  "vat_amount": "Сумма НДС",
+  "enter_price_including_vat": "Введите цену с учетом НДС",
+  "sum_prices_without_vat": "Сумма цен без учета НДС",
+  "vat_sum": "Сумма НДС",
+  "sum_prices_with_vat": "Сумма цен с учетом НДС",
+  "add": "Добавить",
+  "vat_rate": "Ставка НДС",
+  "ex_vat": "Без НДС",
+  "vat": "НДС",
+  "inc_vat": "С НДС",
+  "enter_custom_vat": "Введите пользовательское значение НДС",
+  "price_excluding_vat_sum": "Общая сумма цен без НДС",
+  "vat_amount_sum": "Общая сумма НДС",
+  "price_including_vat_sum": "Общая сумма цен с НДС",
+  "enter_price_including_vat_sum": "Введите общую сумму цен с НДС",
+  "chose_your_vat_rate": "Выберите вашу ставку НДС",
+  "enter_custom_VAT_rate_value": "Введите пользовательское значение ставки НДС"
+}
