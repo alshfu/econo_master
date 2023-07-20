@@ -4,10 +4,19 @@ import 'package:econo_master/vat_calculator/vat_calculator.dart';
 import 'package:econo_master/about.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:econo_master/localization.dart';
+import 'package:econo_master/vat_calculator/vat_calculation.dart';  // Import VATCalculation
+import 'package:econo_master/vat_calculator/calculation_history_table.dart';  // Import CalculationHistoryTable
 
-
-class EconoMaster extends StatelessWidget {
+class EconoMaster extends StatefulWidget {
   const EconoMaster({Key? key}) : super(key: key);
+
+  @override
+  _EconoMasterState createState() => _EconoMasterState();
+}
+
+class _EconoMasterState extends State<EconoMaster> {
+  final calculations = ValueNotifier<List<VATCalculation>>([]);
+
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +31,7 @@ class EconoMaster extends StatelessWidget {
         const Locale('ru', ''),
       ],
       home: DefaultTabController(
-        length: 3,
+        length: 4,  // Increase the length to 4
         child: Scaffold(
           appBar: AppBar(
             title: const Text('EconoMaster'),
@@ -30,7 +39,8 @@ class EconoMaster extends StatelessWidget {
               tabs: [
                 Tab(text: 'VAT Calculator'),
                 Tab(text: 'RUT Calculator'),
-                Tab(text: 'About')
+                Tab(text: 'About'),
+                Tab(text: 'History'),  // Add a new tab
               ],
             ),
           ),
@@ -41,6 +51,7 @@ class EconoMaster extends StatelessWidget {
                   VATCalculator(),
                   RUTCalculator(),
                   const About(),
+                  CalculationHistoryTable(calculations),  // Add a new tab view
                 ],
               ),
               Positioned(
@@ -68,7 +79,6 @@ class EconoMaster extends StatelessWidget {
     );
   }
 }
-
 
 void main() {
   runApp(const EconoMaster());
